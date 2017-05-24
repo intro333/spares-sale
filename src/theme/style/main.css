@@ -1,0 +1,165 @@
+@font-face
+{
+    font-family: 'toyotadisplay_rg';
+    src: url('../fonts/toyotadisplay_rg.woff') format('woff');
+}
+* {
+    -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 768px) {
+    #mainfocus {
+        width: 100%;
+        min-height: 480px;
+    }
+    #mainfocus .hero-unit.hero-medium {
+        min-height: 265px;
+        height: 265px;
+    }
+    #mainfocus .carousel.hero-medium, #mainfocus .carousel.hero-small, #mainfocus .hero-unit.hero-medium, #mainfocus .hero-unit.hero-small {
+        position: static;
+    }
+    #mainfocus .hero-unit.hero-medium, #mainfocus .hero-unit.hero-small {
+        background-size: 720px auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    #mainfocus .mobile-image {
+        display: none;
+    }
+    .container {
+        width: 750px;
+    }
+    .spares-container #mainfocus .page-title h2, .spares-container .page-title h2 {
+        font-size: 32px;
+        /*font-size: 3.2rem;*/
+    }
+}
+@media (min-width: 992px) {
+    #mainfocus .hero-unit.hero-medium {
+        height: 346px;
+        background-size: 940px auto;
+        margin-bottom: 40px;
+    }
+    #mainfocus .mobile-image {
+        display: none;
+    }
+    .container {
+        width: 970px;
+    }
+    .spares-container #mainfocus .container.page-title h2, .spares-container #mainfocus .quickspec-caption .page-title h2, .spares-container .page-title h2 {
+        font-size: 34px;
+        /*font-size: 3.4rem;*/
+    }
+}
+@media (min-width: 1200px) {
+    #html52 #mainContent, #html52 #mainfocus, #html52>.maincontent, body {
+        background: linear-gradient(to right,#f0f2f2,#fff 130px,#fff 50%,rgba(255,255,255,.001)),linear-gradient(to left,#f0f2f2,#fff 130px,#fff 50%,rgba(255,255,255,.001));
+    }
+    #mainfocus {
+        max-height: 60vw;
+    }
+    #mainfocus, #mainfocus .hero-unit, #mainfocus .hero-unit.videomode .videowrapper {
+        height: 93vh;
+        max-height: 60vw;
+        min-height: unset;
+    }
+    #footfocus .hero-unit.hero-medium, #mainfocus .hero-unit.hero-medium {
+        height: 420px;
+        background-size: 1140px auto;
+    }
+    #mainfocus .mobile-image {
+        display: none;
+    }
+    .container {
+        width: 1170px;
+    }
+}
+#mainfocus.page-header-default {
+    height: auto;
+}
+#mainfocus .hero-unit.hero-medium {
+    margin-bottom: 20px;
+}
+#mainfocus .image0 {
+    background-image: url(//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/2247-1140x420_tcm-3020-718327.jpg);
+}
+@media (max-width: 768px) {
+    #mainfocus .hero-unit img.mobile-image {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+    }
+}
+
+img, video {
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.container {
+    margin-right: auto;
+    padding-right: 15px;
+}
+.container, .container-fluid {
+    padding-left: 15px;
+    margin-left: auto;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+.container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
+    content: " ";
+    display: table;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.spares-container #mainfocus .page-title h2, .spares-container .page-title h2 {
+    font-size: 19px;
+    /*font-size: 1.9rem;*/
+}
+#mainfocus header.header-center h2 {
+    text-align: center;
+}
+#mainfocus header.header-dark h1, #mainfocus header.header-dark h2 {
+    color: #1e2a32;
+}
+#mainfocus h1, #mainfocus h2 {
+    text-align: center;
+    display: block;
+}
+h2 {
+    font-family: toyotadisplay_rg,Arial,Helvetica,sans-serif;
+    /*font-size: 2.4rem;*/
+}
+h1, h2, h3, h4, h5 {
+    letter-spacing: -.03em;
+    display: block;
+}
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    font-weight: 400;
+}
+/*.h2, h3 {*/
+    /*font-family: inherit;*/
+    /*font-weight: 500;*/
+    /*line-height: 1.1;*/
+    /*color: inherit;*/
+/*}*/
