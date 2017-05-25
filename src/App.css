@@ -1,24 +1,46 @@
-.App {
-  text-align: center;
+body {
+  font-size: 15px;
+  background: #fff;
+  font-family: toyotatext_rg,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  margin-bottom: 0;
+  direction: ltr;
+  line-height: 1.428571429;
+  color: #1e2a32;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+/*#html50 {*/
+  /*font-size: 15px;*/
+  /*background: #fff;*/
+  /*font-family: toyotatext_rg,Arial,Verdana,Geneva,Helvetica,sans-serif;*/
+  /*margin-bottom: 0;*/
+  /*direction: ltr;*/
+  /*line-height: 1.428571429;*/
+  /*color: #1e2a32;*/
+/*}*/
+
+.carousel-caption .btn, .text-hide, ::selection {
+  text-shadow: none;
+}
+::selection {
+  background: #00a0f0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#html52 {
+  margin-top: 90px;
 }
 
-.App-intro {
-  font-size: large;
+@media (min-width: 768px) {
+  #html52 {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 992px) {
+  #html52 {
+    text-align: center;
+  }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.spares-container {
+  display: block;
 }
