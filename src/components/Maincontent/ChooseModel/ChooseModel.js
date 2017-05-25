@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import 'react-select/dist/react-select.css';
+import { connect } from 'react-redux';
+import { createStore } from 'redux'
+import chooseModel from '../../../reducers'
+
 import ArticleContainer from '../ArticleContainer';
 
 import '../../../theme/style/main.css';
 import './choose-model.css';
+
+import {
+    selectStateChange,
+
+} from './actions';
 
 export default class ChooseModel extends Component {
 
@@ -13,9 +21,44 @@ export default class ChooseModel extends Component {
     }
 
     selectStateChange() {
-        if (!this.props.selectState.status) {
-            this.props.selectStateChange('visible', 1);
-        } else this.props.selectStateChange('hidden', 0);
+
+        function counter(state = 0, action) {
+            switch (action.type) {
+                case 'INCREMENT':
+                    return state + 1
+                case 'DECREMENT':
+                    return state - 1
+                default:
+                    return state
+            }
+        }
+        // const {
+        //     dispatch,
+        //
+        // } = this.props;
+        let store = createStore(counter);
+        store.subscribe(() =>
+            console.log(store.getState())
+        )
+        store.dispatch({ type: 'INCREMENT' })
+        // store.dispatch(chooseModel({
+        //     type: 'CHOOSE_MODEL_SET_VISIBILITY',
+        //     status: true
+        //     }
+        // ))
+        // if (!dispatch.selectState.status) {
+        //     dispatch(selectStateChange({
+        //         status: true,
+        //         visibility: 'visible',
+        //         opacity: 1
+        //     }));
+        // } else {
+        //     dispatch(selectStateChange({
+        //         status: false,
+        //         visibility: 'hidden',
+        //         opacity: 0
+        //     }));
+        // }
     }
 
     render() {
@@ -24,8 +67,8 @@ export default class ChooseModel extends Component {
         };
 
         let selectState = {
-            visibility: this.props.selectState.visibility,
-            opacity: this.props.selectState.opacity
+            visibility: 'visible',
+            opacity: 1
         };
 
         return (
@@ -65,3 +108,7 @@ export default class ChooseModel extends Component {
         );
     }
 }
+
+// export default connect(store => ({
+//     dispatch: store.dispatch
+// }))(ChooseModel);
