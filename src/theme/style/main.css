@@ -188,6 +188,7 @@ article.container {
         font-size: 32px;
         /*font-size: 3.2rem;*/
     }
+
     .spares-container .maincontent article {
         padding-top: 40px;
         padding-bottom: 48px;
@@ -196,6 +197,7 @@ article.container {
         padding-top: 40px;
         padding-bottom: 48px;
     }
+
 }
 @media (min-width: 992px) {
     #mainfocus .hero-unit.hero-medium {
@@ -213,6 +215,7 @@ article.container {
         font-size: 34px;
         /*font-size: 3.4rem;*/
     }
+
     .spares-container .maincontent article {
         padding-top: 20px;
         padding-bottom: 24px;
@@ -257,6 +260,7 @@ article.container {
     .container {
         width: 1170px;
     }
+
     #pagecontent #mainContent, #pagecontent #mainfocus, #pagecontent>.maincontent, body {
         background: linear-gradient(to right,#f0f2f2,#fff 130px,#fff 50%,rgba(255,255,255,.001)),linear-gradient(to left,#f0f2f2,#fff 130px,#fff 50%,rgba(255,255,255,.001));
     }
